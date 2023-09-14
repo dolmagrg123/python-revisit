@@ -1,7 +1,6 @@
 import json
-from account import Account
-from sign_in_page import Sign_In_Page
 
+#copied from different repo
 class Application:
 
     def __init__(self, accountList=[]):
