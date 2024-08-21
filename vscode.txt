@@ -1,0 +1,1 @@
+curl -O https://raw.githubusercontent.com/kura-labs-org/install-sh/main/vscode_install.sh
