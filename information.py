@@ -30,9 +30,15 @@ blood_pressure = "120/80"
 print(type(blood_pressure))
 
 temperature = 98.5
-
 print(temperature)
 print(type(temperature))
+
+temperature = int(96.3)
+print("New Temperature is: ", temperature)
+print(type(temperature))
+
+temperature = 3
+print("Final temperature is: " , temperature)
 
 superPowers = ["Flying", "Strength", "Wisdom"]
 print(superPowers)
@@ -41,3 +47,7 @@ print(len(superPowers))
 
 super_powers = ("Flying", "Strength", "Wisdom")
 print(type(super_powers))
+
+print(f"My name is {name} and I weigh {weight} pounds.")
+
+print("Hello, stranger.",name)
