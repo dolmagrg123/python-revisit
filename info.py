@@ -24,7 +24,7 @@
 # print(mod)
 # print(type(mod))
 
-superHero ={"hero_one":{
+superHero = {"hero_one":{
                 "name":"Batman", 
                 "height": "6ft 3in", 
                 "weight": "65"},
