@@ -45,7 +45,7 @@ def date():
 def order_self(budget,bill,points):
 
     while True:
-        response = input("Would you like to order for yourself? (Y to order, anything else to not order): ")
+        response = input("Would you like to order for yourself? (Y/y to order, anything else to not order): ")
         if response == "Y" or response == 'y':
             points = points - 1
             order = input("What can I get for you?")
@@ -69,7 +69,7 @@ def order_self(budget,bill,points):
 def order_date(budget,total_bill,points):
 
     while True:
-        response = input("Would you like to order for your date? (Y to order, anything else to not order): ")
+        response = input("Would you like to order for your date? (Y/y to order, anything else to not order): ")
         if response == "Y" or response == 'y':
             points = points + 3
             order = input("What can I get for your date?")
@@ -120,41 +120,3 @@ def redate(points):
 
 date()
 
-
-
-
-
-
-
-
-
-    
-
-
-
-
-# def order_item(menu,budget):
-#     total_bill = 0
-#     print(menu)
-#     while True:
-#         response = input("Would you like to order? (Y/N)")
-#         count = 0
-#         if response == 'Y' or response == 'y' :
-#             count = count + 1
-#             food = input("What would you like to eat?")
-#             budget = budget - int(menu[food]["Price"])
-#             total_bill = total_bill + int(menu[food]["Price"])
-#             print("You have", budget , "dollars remaining in your budget")
-#         else:
-#             print ("Please pay the bill")
-#             print ("Your total bill is $", total_bill)
-#             print ("Your reamining budget is $", budget)
-#             if budget > 0:
-#                 print ("Thank you for paying the bill")
-#                 print ("Congratulations, You have earned a second date!!!")
-#             else:
-#                 print ("You just lost your date")
-#             break
-
-
-# order_item(menu,budget)
