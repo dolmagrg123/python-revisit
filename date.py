@@ -37,16 +37,17 @@ def order_item(menu,budget):
             food = input("What would you like to eat?")
             budget = budget - int(menu[food]["Price"])
             total_bill = total_bill + int(menu[food]["Price"])
-            print("You have", budget , "dollars remaining in your budget")
+            print("You have", budget , "dollars remaining in your budget\n")
+            print("--------------------------------")
         else:
             print ("Please pay the bill")
             print ("Your total bill is $", total_bill)
-            print ("Your reamining budget is $", budget)
+            print ("Your remaining budget is $", budget)
             if budget > 0:
-                print ("Thank you for paying the bill")
+                print ("Thank you for paying the bill\n")
                 print ("Congratulations, You have earned a second date!!!")
             else:
-                print ("You just lost your date")
+                print ("The bill is above your budget, Would you still like to pay? (Y/N)")
             break
 
 
