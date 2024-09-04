@@ -16,7 +16,7 @@ def count_items():
                 no_of_file +=1
             else:
                 no_of_dir +=1
-        print("Number of file = ", no_of_file)
+        print(f"Number of file = {no_of_file}")
         print("Number of dir = ", no_of_dir)
     except FileNotFoundError:
         print(f"{dir} does not exist")
