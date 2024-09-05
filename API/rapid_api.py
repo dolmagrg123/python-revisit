@@ -12,9 +12,12 @@ headers = {
 response = requests.get(url, headers=headers, params=querystring)
 
 raw = response.json()
+# print(raw)
 
-# print(raw["Stages"])
+print(raw["Stages"])
 
 for item in raw["Stages"]:
+    print("")
+    # print(item)
     # print({item.get("Sid")})
-    print(item["Sid"])
+    # print(item["Sid"])
