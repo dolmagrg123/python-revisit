@@ -5,15 +5,12 @@ Lastly, the function should return the uptime percentage rounded to two decimal 
 '''
 
 def uptime(total_hours,down_hours):
-    total_hours=float(total_hours)
-    down_hours=float(down_hours)
 
     uptime = total_hours-down_hours
-    up_percent = (uptime/total_hours) * 100
-    rounded_percent = round(up_percent,2)
-    print(f"The uptime percentage is {rounded_percent}")
+    up_percent = round((uptime/total_hours) * 100,2)
+    print(f"The uptime percentage is {up_percent}")
 
 
-total_hours = input("Enter the total number of hours")
-down_hours = input("Enter the number of hours service was down")
+total_hours = float(input("Enter the total number of hours"))
+down_hours = float(input("Enter the number of hours service was down"))
 uptime(total_hours,down_hours)
