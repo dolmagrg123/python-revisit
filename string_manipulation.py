@@ -9,4 +9,7 @@ def rev(input):
 user_str =  input("Enter a string")
 rev(user_str)
 
-
+#CHAPTGPT:
+# string = "hello"
+# reversed_string = string[::-1]
+# print(reversed_string)
