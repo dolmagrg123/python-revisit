@@ -1,8 +1,15 @@
 def fahrenheit_to_celcius(degree):
 
-    temp= (37/98.6) * degree
-    print(f"{degree} Fahrenheit is {temp} Celcius")
+    temps= (37/98.6) * degree
+    print(f"{degree} Fahrenheit is {temps} Celcius")
 
+def user_input():
+    try:
+        temp = float(input("Enter a temperature in Fahrenheit: "))
+        return temp
+    except:
+        print("Incorrect value. Please try again")
+        user_input()
 
-temp = float(input("Enter a temperature in Fahrenheit: "))
-fahrenheit_to_celcius(temp)
+fahrenheit_to_celcius(user_input())
+
