@@ -1,4 +1,5 @@
-
+# Write a program to check if a number is even or odd.
+# Check if a year is a leap year.
 
 def even_odd(user_input):
     if user_input%2 == 0:
